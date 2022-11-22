@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niuansai</title>
+    <!-- <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset200802.css"> -->
+    <link rel="stylesheet" href="/HTML.CSS/05.Css Naudojimas/style.css">
+</head>
+<body>
+    <!-- 
+    CSS paveldėjimas
+    Default stiliai
+    CSS prioritetai
+    Reset/Normalize CSS
+    Google Fonts
+    Icons
+     -->
+     <main>
+        <section  id="vaikinisTevinis">
+            <h1>Vaikinis / Tėvinis elementas</h1>
+            <p>
+                Tėvinis elementas gali turėti daugelį vaikinių elementų. <br>
+                Vaikinis elementas, gali turėti TIK 1  tėvinį elementą.
+            </p>
+
+        </section>
+        <section id="paveldejimas">
+            <h1>Paveldėjimas</h1>
+            <p>
+                Paveldėti stilius gali TIK VAIKINIS ELEMENTAS IŠ TĖVINIO ELEMENTO. <br>
+                Paveldimi stiliai yra tie, kurie keičia elemento išvaizdą, o ne būseną. Pvz.: color, font-size, font-family... <br>
+                Nepaveldimi stiliai yra tie, kurie keičia elemento būseną. Pvz.: width, height, display, border, position... <br>
+                Net paveldėti stiliai gali nebūti atvaizduoti dėl stilių prioritetų.
+            </p>
+            <ul>
+               <li>labas</li>
+               <li>labas</li>
+               <li>
+                <ul>
+                    <li>ate</li>
+                    <li>ate</li>
+                    <li>ate</li>
+                </ul>
+               </li>
+               <li>labas</li>
+            </ul>
+        </section>
+        <section id="defaultStyles">
+            <h1>Numatytieji stiliai</h1>
+            <h2>Numatytieji stiliai</h2>
+            <h3>Numatytieji stiliai</h3>
+            <p>
+                Numatytieji stiliai yra automatiškai naršyklės suteikti stiliai. Tarp skirtingų naršyklių numatytieji stiliai gali minimalistiškai keistis ir šitaip sugadinti svetainės vaizdą vartotojams. <br>
+                Tam, kad nebūtų problemų kuriant dizainą skirtingoms naršyklėms yra naudojami Reset arba Normalize CSSai. <br>
+                Reset - resetina visus stilius. <br>
+                Normalize - suvienodina visus stilius tarp naršyklių ir panaikina dalį kenkėjiškų stilių.
+            </p>
+        </section>
+        <section id="prioritetai">
+            <h1>CSS Prioritetai</h1>
+            <ol>
+                <li>Inline Style - 1000</li>
+                <li>ID - 100</li>
+                <li>Class - 10</li>
+                <li>Element - 1</li>
+                <li>CSS Points</li>
+                <li>CSS Order (eiliškumas kode)</li>
+                <li>User agents Styles (Default)</li>
+                <li>Inheritence (paveldėjimas)</li>
+            </ol>
+            <a href="https://www.google.lt">Google</a>
+            <p class="redText">Esant dviem selektoriams, kurie nusako to paties elemento sievodus stilius, yra atsižvelgiama į tų selektorių prioritetus. Aukštesnį balą turintys  prioritetai turi aukštesnį prioritetą. <br>
+            Esant dviems vienodo prioritetų balo selektoriams, keičiant tą patį elemento stilių yra atsižvelgiama į CSS eiliškumą, kuris CSS stilius aprašytas vėliau, tas ir bus atvaizduojamas. 
+            </p>
+            <p>
+                <span class="veryI">Jeigu įmanoma - nenaudoti</span>
+            </p> !!! important prierašas prie stiliaus ignoruoja visus prioritetus ir niekas jo negali pakeisti, tik kitas !important prierašas, kuris turi aukštesnį prio.
+
+        </section>
+        <section id="googleFonts">
+            <h1>
+                <a href="https://fonts.google.com">Google Fonts</a>
+            </h1>
+            <p>Norėdamas inportuoti šriftą, turi importuoti jį iš google fonts, turi nurodyti stilius bei paryškinimus ir pabraukimus, viską supliusuoti ir sulinkinti su CSS failu. </p>
+        </section>
+        <section id="icons">
+            <h1>Icons</h1>
+            <p>
+                Ikona yra mažas paveiksliukas. <br>
+                Tam, kad į puslapį įkeltume ikonas, reikia naudoti i arba span tagą.
+            </p>
+            <h2>Font-Awesome</h2>
+            <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">Biblioteka</a>
+            <i class="fa fa-bath"></i>
+            <span class="fa fa-apple"></span>
+            <span class="fa">&#xf2bc;	
+
+            <h2>GliphIcons</h2>
+            <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">Biblioteka</a>
+            <i class="glyphicon glyphicon-adjust"></i>
+            <span class="glyphicon glyphicon-apple"></span>
+            <span class="gyphicon">&#xe209;</span>
+
+            <h2>Google</h2>
+            <a href="https://fonts.googleapis.com/icon?family=Material+Icons">Biblioteka</a>
+            <i class="metarial-icon"></i>
+            <span></span>
+            <span></span>
+            
+
+        </section>
+     </main>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    height: 800vh;
+
+}
+.kvadratasDidelis {
+    height: 300px;
+    width: 300px;
+    border: 2px dashed black;
+    background-color: aquamarine;
+    margin: 100px;
+
+}
+#tranzicija {
+    height: 300px;
+    width: 300px;
+    border: 2px dashed black;
+    background-color: aquamarine;
+    margin: 100px;
+    /* transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 1s; */
+    transition: all 5s lineair 0s;
+}
+
+.scale {
+    transform: scale(2, 0.5);
+}
+.rotate {
+    transform: rotate(45deg);
+}
+.translate {
+    transform: translate3d(100px, 200px, 50px);
+}
+.skew {
+    transform: skew(50deg, 20deg);
+}
+/* galima rašyti vienoje vietoje */
+
+/* .kvadratasDidelis {  */
+    /* transform: scale(1)  translate(100px, 100px)  rotate(150deg);
+    transform-origin: top left;
+} */
+.animacija
+{
+    /* animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pikapika; */
+    animation: 10s linear infinite pikapika;
+}
+
+/* ___________________________ */
+#pvz1 div{
+margin: 50px;
+width: 100px;
+height: 100px;
+background: rgb(110, 67, 67);
+position: relative;
+animation: first 2s infinite alternate-reverse;
+}
+      
+@keyframes first {
+    from {bottom: 100px;}
+    to {bottom: 0px;}
+    }
+
+.forma {
+margin: 50px;
+width: 100px;
+height: 100px;
+background-color: rgb(255, 0, 0);
+position: relative;
+text-align: center;
+/* animation-name: antras; */
+}
+
+.forma:hover {
+    animation: antras 1s alternate infinite;
+
+}
+@keyframes antras {
+    from {background-color: red; color:blanchedalmond}
+    to {background-color: yellow; color: black;}
+  }
+
+
+
+  /* ****************** */
+
+
+  .kvadratas {
+width: 100px;
+height: 100px;
+background-color: green;
+border: 1px solid black;
+font-size: 30px;
+text-align: center;
+line-height: 100px;
+  }
+.flexContainer {
+    height: 500px;
+    border: 5px solid black;
+    background-color: bisque;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }

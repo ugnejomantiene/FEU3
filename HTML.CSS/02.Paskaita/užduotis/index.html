@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Užduotis</title>
+</head>
+<body>
+   <!--   1) Sukurkite lentelę, kurioje būtų informacija apie 5 jūsų mėgstamiausias vietas (kur norėtumėte nuvykti, kur jau buvote ir t.t.). Informacija apie vietas: Eilės numeris; Pavadinimas; Šalis; Buvau/Nebuvau; Paveiksliukas; Nuoroda;
+-->
+<table border>
+    <caption>Užduotis</caption>
+    <colgroup></colgroup>
+    <thead>
+        <tr>
+            <th>Nr.</th>
+            <th>Pavadinimas</th>
+            <th>Šalis</th>
+            <th>Buvau/Nebuvau</th>
+            <th>Paveiksliukas</th>
+            <th>Nuoroda</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Diokletiano rūmai</td>
+            <td>Kroatija</td>
+            <td>Nebuvau</td>
+            <td><img height="100px" width="150px" src="img/kroatija.jpg" alt="Kroatija"></td>
+            <td><a href="https://lt.wikipedia.org/wiki/Diokletiano_r%C5%ABmai" target="_blank">Diokletiano rūmai</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Guelio parkas</td>
+            <td>Ispanija</td>
+            <td>Nebuvau</td>
+            <td><img height="100px" width="150px" src="img/guelio_parkas.jpg" alt="Ispanija"></td>
+            <td><a href="https://lt.wikipedia.org/wiki/Guelio_parkas" target="_blank">Guelio parkas</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Trolio liežuvis</td>
+            <td>Norvegija</td>
+            <td>Nebuvau</td>
+            <td><img height="100px" width="150px" src="img/trolio-liezuvis.jpg" alt="Norvegija"></td>
+            <td><a href="https://holidayclub.lt/trolio-liezuvis/" target="_blank">Trolio-liežuvis</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Koliziejus</td>
+            <td>Italija</td>
+            <td>Nebuvau</td>
+            <td><img height="100px" width="150px"src="img/koliziejus.jpg" alt="Italija"></td>
+            <td><a href="https://lt.wikipedia.org/wiki/Koliziejus" target="_blank">Koliziejus</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Vavelio pilis</td>
+            <td>Lenkija</td>
+            <td>Nebuvau</td>
+            <td><img height="100px" width="150px"src="img/Vavelio_bokstas.jpg" alt="Lenkija"></td>
+            <td><a href="https://lt.wikipedia.org/wiki/Karali%C5%A1koji_Vavelio_pilis" target="_blank">Karališkoji Vavelio pilis</a></td>
+          </tr>
+          
+    </tbody>
+    <tfoot></tfoot>
+
+</table>
+<hr>
+ <!-- 2) Sukurti formą, kurioje būtų: vardo/slapyvardžio, email, slaptažodžio įvestys, lyties pasirinkimas, komentaro įvesties laukas ir formos pateikimo mygtukas.
+-->
+<div> <!-- Formos užduotis -->
+    <h1>Formos užduotis</h1>
+    <form id="formosUzduotis">
+      <div>
+        <label for="name">Vardas:</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div>
+        <label for="email">El. paštas:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="pass">Slaptažodis</label>
+        <input type="password" name="pass" id="pass" required>
+      </div>
+      <div>
+        <span>Pasirinkite savo lytį:</span>
+        <div>
+          <label for="male">Vyras</label>
+          <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+          <label for="female">Moteris</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+          <label for="non">nonBinary</label>
+          <input type="radio" name="gender" id="non" value="non" checked required>
+        </div>
+      </div>
+      <div>
+        <label for="comment">Palikite savo atsiliepimą:</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Rašykite savo atsiliepimą čia..." required></textarea>
+      </div>
+      <input type="submit" value="Pateikti">
+    </form>
+  </div>
+
+
+
+
+  <script>
+    document // kreipiuosi į dokumentą
+    .querySelector('#formosUzduotis') // pasirenku elementą su ID "formosUzduotis"
+    .addEventListener('submit', (event) => { // laukia "submit" įvykio ir vykdo bevardę funkciją
+      event.preventDefault(); // neleidžia formai būti siunčiamai į serverį 
+      console.log(event); // į konsolę išveda formos informaciją
+      event.target.reset(); // išvalo formą
+    });
+  </script>    
+
+
+    
+
+</body>
+</html>

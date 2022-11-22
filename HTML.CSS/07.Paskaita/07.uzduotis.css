@@ -1,0 +1,39 @@
+
+body {
+    background-color: rgb(8, 34, 35);
+    color: white;
+}
+#task2 {
+margin: 100px auto;
+width: 35%;
+background-color: rgb(21, 91, 96);
+padding: 20px;
+}
+.inputs4 div label{
+    display: block;
+}
+.inputs2 label:first-child {
+    display: block;
+}
+.footer{
+    text-align: center;
+}
+
+ h1 {
+    font-size: 30px;
+}
+form {
+    text-align: center;
+}
+input * {
+    margin: 5px;
+}
+input:required {
+    border: 2px solid red;
+}
+.inputs2 div > :optional {
+    border: 2px solid greenyellow;
+}
+.age > :out-of-range {
+    border: 5px solid red;
+}

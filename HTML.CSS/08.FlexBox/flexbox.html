@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+    <!-- transform
+    transition
+    animation -->
+    <main>
+        <section id="transform">
+            <h1>Transform</h1>
+            <ul>
+                <li>scale - keičia elemento dydį (default 1 )(ištampo)</li>
+                <li>scale(x,y), scaleX(x), scaleY(y), scaleZ(z), scale3d(x,y,z)</li>
+                <hr>
+                <li>rotate - pasuka elementą (deg)</li>
+                <li>rotateX(x), rotateY(y), rotateZ(z), rotate3d(x,y,z,a), rotate(x,y)</li>
+                <li>translate - pastumti elementą</li>
+                <li>translateX(x), translateY(y), translateZ(z), translate3d(x,y,z,a), translate(x,y)</li>
+                <hr>
+                <li>skew - tampo elementą už kampų</li>
+                <li>skew(x,y), skewX(x), skewY(y)</li>
+                <hr>
+                <li>matrix</li>
+                <li>perspective</li>
+               
+
+
+            </ul>
+            <div class="kvadratasDidelis scale">Labas</div>
+            <div class="kvadratasDidelis rotate">Labas</div>
+            <div class="kvadratasDidelis translate">Labas</div>
+            <div class="kvadratasDidelis skew">Labas</div>
+            <div class="kvadratasDidelis transformation">Labas</div>
+
+        </section>
+        <section id="transition">
+            <h1>Tranzicija</h1>
+            <ul>
+                <li>transition-property - kokie stiliai keičiasi</li>
+                <li>transitionduration - per kiek laiko įvyksta pakitimas</li>
+                <li>transition-timing-function  - kaip tranzisia paskirstys turimą laiką
+                    <ul>
+                        <li>ease</li>
+                        <li>ease-in</li>
+                        <li>ease-out</li>
+                        <li>ease-in-out</li>
+                        <li>lineair</li>
+                        <li>cubiz-bezier</li>
+                    </ul>
+                </li>
+                <li>
+                    transition-delay  - po kiek laiko pradeda vykti pakitimai
+                </li>
+            </ul>
+            <div class="kvadratasDidelis rotate">Labas</div>
+
+
+        </section>
+        <section id="animacija">
+            <h1>Animacija</h1>
+            <ul>
+                <li>animation-duration - animacijai skirtas laiko tarpas</li>
+                <li>animation-duration</li>
+                <li>animation-easing-function - kaip animacijai paskirstys turimą laiką</li>
+                <li>animation-delay  - po kiek laiko prasiddės</li>
+                <li>animation-iteration-count - kiek sykių vyks animacija</li>
+                <li>animation-direction  - animacijos kryptis</li>
+                <li>animation-fill-mode  - animacijos pradžios/pabaigos kryptis</li>
+                <li>animation-play-state  - animacijos būsena </li>
+                <li>animation-name - animacijos pavadinimas</li>
+
+            </ul>
+            <p></p>
+            <div class="kvadratasDidelis animacija"></div>
+
+        </section>
+        <section id="pvz1">
+            <div></div>
+
+        </section>
+        <!-- 1) Užėjus su kursoriumi ant mygtuko - pasikeičia jo fono ir teksto spalva per kažkokį laiko tarpą (labai mažą). -->
+
+        <section id="pvz2">
+            <div class="forma">Sunki tema</div>
+        </section>
+        <section id="pvz3">
+            <div class=""></div>
+        </section>
+        <section id="flex">
+            <h1>Display: flex</h1>
+            <ul>
+                <li>flex-direction</li>
+                <li>flex-wrap</li>
+                <li>flex-flow</li>
+                <li>justify-concent  -  main axis</li>
+                <li>align-content  - cross axis</li>
+                <li>align-item</li>
+            </ul>
+            <div class="flexContainer">
+                <div class="kvadratas">1</div>
+                <div class="kvadratas">2</div>
+                <div class="kvadratas">3</div>
+                <div class="kvadratas">4</div>
+                <div class="kvadratas">5</div>
+                <div class="kvadratas">6</div>
+                <div class="kvadratas">7</div>
+                <div class="kvadratas">8</div>
+                <div class="kvadratas">9</div>
+                <div class="kvadratas">10</div>
+                <div class="kvadratas">11</div>
+                <div class="kvadratas">12</div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

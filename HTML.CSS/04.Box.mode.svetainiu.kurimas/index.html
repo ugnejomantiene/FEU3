@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Box Model</title>
+</head>
+<body>
+    <!-- 
+        box model
+        background
+        semantic
+        menu
+        page
+    -->
+    
+    <header>
+        
+        <nav>
+
+            <div class="logo">
+               <a href="#">
+                <img src="/HTML.CSS/04.Box.mode.svetainiu.kurimas/image/360_F_498608358_uvsC8ixyQA4EXGYgoEXISCQMjcCKh4ZI.jpg" alt="pageLogo">
+               </a>
+            </div>
+            <div class="mainMenu">
+              <ul>
+                <li><a href="#boxModel" class="link">Box Model</a></li>
+                <li><a href="#selectors" class="link">Selectors</a></li>
+                <li><a href="#background" class="link">Backgrounds</a></li>
+                <li><a href="#semantic" class="link">Semantic</a></li>
+              </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="boxModel">
+            <h1>Box model</h1>
+            <ol>
+                <li>Content - Turinys</li>
+                <li>Padding - Pamušalas</li>
+                <li>Border - Rėmelis</li>
+                <li>Margin - Atstumas iki kitų elementų (paraštės)</li>
+                <li>Position - Pozicija (kai yra priskirta pozicija)</li>
+            </ol>
+        </section>
+        <section class="boxModelPvz">Box Modelis</section>
+            <section> <!--Content-->
+                <h2>Content</h2>
+                <p>
+                    Turinys - dėžutės modelio vidurinė dalis, kurioje yra atvaizduojama informacija vartotojui.
+                </p>
+            </section>
+            <section> <!--Padding-->
+                <h2>Padding</h2>
+                <p>
+                    Pamušalas - Pirmasis turinio sluoksnis, kuris nurodo, per kokį atstumą turinys bus atitrauktas nuo rėmelio. <br>
+                    Pamušalas yra vizualiai patomas vartotojui ir įeina į elementą, pasiima jo savybes. (Pvz., pelės užėjimas)
+                </p>
+                <ul>
+                    
+                    <li>padding: top/right/bottom/left;</li>
+                    <li>padding: top/bottom left/right;</li>
+                    <li>padding: top right/left bottom;</li>
+                    <li>padding: top right left bottom</li>
+                    <li>padding-top: top</li>
+                    <li>padding-right: right;</li>
+                    <li>padding-bottom: bottom;</li>
+                    <li>padding-left: left;</li>
+                </ul>
+            </section>
+            <section> <!--Border-->
+                <h2>Border</h2>
+                <p>
+                   Rėmelis yra antrasis sluoksnis, kuris turi plotį, tipą, spalvą. Ir jo pločio nustatymas nurodo, kokio opločio atstumu bus atskirtas margin ir padding.<br>
+                   Rėmelis yra vizualiai matomas vartotojui ir reaguoja į vartotojo interakcijas.
+        
+                </p>
+                <ul>
+                    <li>border: width style color;</li>
+                    <li>border-width: width;</li>
+                    <li>border-style: style;</li>
+                    <li>border-color: color;</li>
+                    <li>border- width/style/color-top/right/bottom/left</li>
+                    <li>border-top/right/bottom/left-wirth/style/color: detalusis</li>
+                    <li>border-radius: radius</li>
+                    <li>border-coner-radius: kampo radius</li>
+                </ul>
+            </section>
+            <section> <!--Margin-->
+                <h2>Margin</h2>
+                <p>
+                    Paraštė yra trečiasis turinio sluoksnis, kuris nurodo per kikį atstumą nuo rėmelio bus atitraukti kiti aplinkiniai elementai. <br>
+                    Margin nėra vizualiai atvaizduojamas ir neturi interakcijos kai užvedamas kursorius.
+                </p>
+                <ul>
+                    <li>margin: top/right/bottom/left;</li>
+                    <li>margin: top/bottom right/left;</li>
+                    <li>margin: top right/left bottom;</li>
+                    <li>margin: top right bottom left;</li>
+                    <li>margin-top: top;</li>
+                    <li>margin-right: right;</li>
+                    <li>margin-bottom: bottom;</li>
+                    <li>margin-left: left;</li>
+                
+                </ul>
+        
+            </section>
+            <section> <!--Position-->
+                <h2>Position</h2>
+                <p>
+                    Pozicija - nurodo, kaip elementas bus pozicionuojamas pulapyje. For more info: <a href="../03.Paskaita.CSS/index.html#positions" target="_blank">Click Me</a>
+                </p>
+        
+            </section>
+            <section id="selectors">
+                <h1>Selectors</h1>
+                <ul>
+                    <li>* - pasirinks viską</li>
+                    <li>selector, selector - keletas selektorių vienu metu</li>
+                    <li>element1/class1/id1 element2/class2/id2 - bet kur viduje</li>
+                    <li>element1/class1/id1 > element2/class2/id2 - ne bet kur, o iš karto viduje esantis (vaikinis elementas)</li> 
+                    <li>selector:hover - kai užvedi pelytę ant elemento</li>
+                </ul>
+                <div>
+                    <ul>
+                        <li>Labas</li>
+                        <li>Labas</li>
+                        <li>Labas</li>
+                    </ul>
+                </div>
+        
+            </section>
+            <section id="background"> <!-- Background-->
+                <h1>Fonai</h1>
+                <div class="fonas1">1</div>
+                <div class="fonas2">2</div>
+                <div class="fonas3"> <img src="./image/leave.jpg" alt=""> 3</div>
+                <div class="fonas4">4</div>
+                <div class="fonas5">5</div>
+                <div class="fonas6">6</div>
+        
+            </section>
+            <section class="main">
+                <img src="/HTML.CSS/04.Box.mode.svetainiu.kurimas/image/leave.jpg" alt="">
+                <div class="con">
+                    <h1>Main</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia corporis veniam hic mollitia numquam aspernatur quaerat illo quas assumenda?</p>
+                </div>
+        
+            </section>
+        
+            <div id="semantic"> <!-- Semantic -->
+                <h1>Semantiniai tagai</h1>
+                <p>
+                    Naudojami tam, kad vien perskaičius taga pavadinimą būtų aikšku, koks tos info tikslas.
+                </p>
+                <ul>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>main</li>
+                    <li>aside</li>
+                    <li>section</li>
+                    <li>article</li>
+                    <li>footer</li>
+                </ul>
+                <p>
+                    Header - viršutinė puslapio dalis, kurioje būna: logotipas, menu, paieškos sistema, prisijungimas.
+                </p>
+                <p>
+                    Nav - menu. Pagrindinis puslapio menu būna header viduje. Bet puslapiai gali turėti pagalbinius menu.
+                </p>
+                <p>
+                    Main - puslapio turinio vieta puslapyje. Jo viduje būna section, article, net ir kitų aside.
+                    
+                </p>
+                <p>
+                    Aside - šoninė sekcija esanti šalimais pagrindinio turinio arba esanti pagrindinio turinio viduje. 
+                </p>
+                <p>
+                    Section/article - sekcija/straipsnis pagrindinio turinio viduje skirsto į sekcijas arba straipsnius.
+                </p>
+                <p>
+                    Footer - apatinė puslapio dalis, kurioje būna: CR, data, kūrėjas/owneris, terms and conditions, privacy ppolicy, cookies, partneriai, rėmėjai ir t.t. 
+                </p>
+        
+            </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+
+
+  
+
+
+
+</body>
+</html>

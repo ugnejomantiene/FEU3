@@ -1,0 +1,118 @@
+@import url(https://necolas.github.io/normalize.css/);
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: aliceblue;
+    padding: 30px 15px;
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: cover;
+}
+header .logo > img {
+    height: 100px;
+    width: 100px;
+}
+.mainMenu > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-shadow: 1px 1px 3px rgb(195, 195, 200);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.mainMenu > ul > li {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.mainMenu .link {
+    color: rgb(69, 167, 167);
+}
+main > #help {
+    display: none;
+}
+main > #login {
+    box-shadow: 1px 1px 3px rgb(195, 195, 200);
+    display: block;
+    grid-area: 1 / 1 / 2 /5;
+    
+}
+main > #content {
+    display: block;
+    grid-area: 2 / 1 / 4 / 5;
+    box-shadow: 1px 1px 3px rgb(195, 195, 200);
+
+
+}
+body > main {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+footer > p {
+    text-align: center;
+}
+
+
+@media (min-width:1000px) {
+    .mainMenu > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start
+    }
+    .mainMenu > ul > li {
+        width: 100px;
+        gap: 5px;
+    }
+    main > * {
+        align-items: center;
+    }
+    main #login {
+        box-shadow: 1px 1px 3px rgb(195, 195, 200);
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        grid-area: 1 / 1/ 3/2;
+    }
+    main  #help {
+        display: flex;
+        grid-area: 3 / 1/ 6 / 2;
+        box-shadow: 1px 1px 3px rgb(195, 195, 200);
+    }
+    main #content {
+        display: flex;
+        grid-area: 1 /2 / 6 / 5;
+        box-shadow: 1px 1px 3px rgb(195, 195, 200);
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    footer {
+        height: 1000px;
+        display: flex;
+    }
+    footer > p {
+        padding: 50px;
+    }
+    .mainMenu .link {
+        color: rgb(104, 116, 116);
+    }
+   
+  
+}

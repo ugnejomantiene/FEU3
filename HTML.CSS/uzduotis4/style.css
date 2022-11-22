@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(45, 45, 85) ;
+}
+img {
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+h1 {
+    color: aqua;
+}
+h1 span {
+    color: yellow;
+}
+h3 {
+    color: brown;
+}
+.footer {
+    text-align: center;
+}
+
+
+/* Lentele */
+.b1 {
+    color: rgb(136, 136, 138);
+}
+
+tbody tr:nth-child(2n+2) {
+    background-color: rgb(103, 89, 141);
+}
+tbody tr:nth-child(2n+3) {
+    background-color: rgb(60, 56, 56);
+}
+tr > td:first-of-type {
+    color: brown;
+}
+
+table {
+    width: 40%;
+    margin:0 auto;
+}
+tbody {
+    line-height: 30px;
+}
+.p {
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 5px 7px;
+
+}
+.pr {
+    background-color: rgb(205, 57, 24);
+    border-radius: 5px;
+    padding: 5px 7px;
+
+}
+.l {
+    background-color: rgb(225, 252, 71);
+    border-radius: 5px;
+    padding: 5px 7px;
+
+}

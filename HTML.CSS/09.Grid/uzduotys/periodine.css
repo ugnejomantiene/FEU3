@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#periodic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)  20px  repeat(15, 1fr);
+    grid-template-rows: repeat(7, 1fr) 20px repeat(2, 1fr) ;
+    gap: 2px;
+    margin: 50px;
+    word-wrap: wrap;
+}
+
+main {
+    margin: 100px auto;
+}
+
+
+/* Styles */
+
+
+h6 {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    margin: 5px;
+}
+h5 {
+    margin: 0;
+    text-align: center;
+
+}
+
+/* Styles */
+.b {
+    background-color: rgba(182, 194, 240, 0.982);
+    color: rgb(69, 69, 184);
+    border: 2px solid rgb(69, 69, 184);  
+}
+.r {
+    background-color: rgba(255, 164, 176, 0.982);
+    color: rgb(211, 31, 31);
+    border: 2px solid  rgb(211, 31, 31);
+}
+.b2 {
+    background-color: rgba(167, 230, 249, 0.982);
+    color: rgb(18, 115, 110);
+    border: 2px solid rgb(18, 115, 110);
+}
+.y {
+    background-color: rgba(227, 230, 160, 0.982);
+    color: rgb(122, 117, 39);
+    border:2px solid rgb(122, 117, 39);
+}
+.b3 {
+    background-color: rgba(186, 237, 247, 0.982);
+    color: rgb(91, 182, 218);
+    border: 2px solid rgb(91, 182, 218);
+}
+.or {
+    background-color: rgba(223, 159, 57, 0.555);
+    color: rgb(99, 76, 11);
+    border: 2px solid  rgb(126, 96, 12);
+}
+.p {
+    background-color: rgba(115, 64, 157, 0.536);
+    color: rgb(115, 25, 175);
+    border: 2px solid  rgb(115, 25, 175);
+}
+.g {
+    background-color: rgba(124, 112, 134, 0.536);
+    color: rgb(60, 49, 68);
+    border: 2px solid rgb(60, 49, 68);
+}
+.ch {
+    background-color: rgba(255, 37, 150, 0.536);
+    color: rgb(152, 0, 101);
+    border: 2px solid rgb(152, 0, 101);
+}
+.bb {
+    background-color: rgba(37, 146, 255, 0.536);
+    color: rgba(0, 0, 0, 0.804);
+    border: 2px solid rgba(0, 0, 0, 0.804);
+}
+
+.b:hover, .r:hover, .b2:hover, .y:hover, .b3:hover, .or:hover, .p:hover, .g:hover, .ch:hover, .bb:hover {
+    box-shadow: 0 10px 10px 5px;
+    transition: .5s;
+    z-index: 2;
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* Grid property */
+.empty1 {
+    grid-column-start: 2;
+    grid-column-end: 19;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(255, 255, 255);
+    width: 3fr;
+}
+
+.empty2 {
+    grid-column-start: 3;
+    grid-column-end: 14;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgb(255, 255, 255);
+
+}
+.empty3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 11;
+    background-color: rgb(255, 255, 255);
+
+}
+.empty4 {
+    grid-column-start: 1;
+    grid-column-end: 20;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    background-color: rgb(255, 255, 255);
+
+}
+.empty5 {
+    grid-area: 9 /1 /11 /4  ;
+    
+}
+.empty6 {
+    grid-area: 9 /19 /11 /20  ;
+    
+}

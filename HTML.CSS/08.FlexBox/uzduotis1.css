@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    background-color: rgb(64, 64, 105);
+    justify-content: space-between;
+    margin: 100px auto;
+}
+
+main div {
+    padding: 10px;
+
+}
+
+
+.img {
+    background-image: url(./images/mokytohja.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 80%;
+
+    
+}
+h1 {
+    color: aquamarine;
+}
+.box1 {
+    flex-wrap: wrap;
+}
+.box {
+    width: 80%;
+}

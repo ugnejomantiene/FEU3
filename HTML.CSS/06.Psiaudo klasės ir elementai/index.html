@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Pseudo klasės ir elementai
+    Multimedijos elementai (video audio iframe)
+    Lentelė su pseudo klasės elementais 
+    Formos si pseudo klasės elementais
+    Animacijos ir perėjimai-->
+    <main>
+        <section id="pseudoSelektoriai">
+            <h1>
+                <a href="https://www.w3schools.com/csSref/css_selectors.php" target="_blank">Pseudo Selektoriai</a>
+
+            </h1>
+            <ul>
+                <li>*</li>
+                <li>element</li>
+                <li>.class</li>
+                <li>#id</li>
+                <li>selector, selector</li>
+                <li>selector selector</li>
+                <li>selector > selector</li>
+                <li>element.class#id - elementas turintis nurodytą klasą arba klases ir/arba nurodytą ID</li>
+                <li>selector1 + selector2 - iš karto už selector1 einantis selector2</li>
+                <li>selector1 ~ selector2 - už selector1 visi einantys selector2 (būtinai tame pačiame lygyje)</li>
+                <hr>
+                <li>[attribute] - elementas parenka būtent šitą atributą</li>
+                <li>[atrribute=value] - atributas turintis nurodytą reikšmę</li>
+                <li>[atrribute~=value] - atributas, kurio reikšmėje yra nurodytas žodis</li>
+                <li>[atrribute*=value] - atributas, kurio reikšmėje yra nurodyta žodžio dalis</li>
+                <li>[atribute|=value] - atributas, kurio reikšmė yra value arba value-...</li>
+                <li>[atribute^=value] - atributas, kurio reikšmė prasideda value...</li>
+                <li>[atribute$=value] - atributas, kurio reikšmė pasibaigia ...value</li>
+                <hr>
+                <li>:link - paprasta/nelankyta nuoroda</li>
+                <li>:visited - lankyta nuoroda</li>
+                <li>:hover - užėjęs kursorius</li>,                <li>:active - aktyvi (paspaudimo momento) nuoroda</li>
+                <hr>
+                <li>element:empty - tuščias elementas</li>
+                <hr>
+                <li>::marker  -sąrašo elementų žymės</li>
+                <li>:not(p) - parenka viską, apart to, kas yra apskliausta</li>
+                <hr>
+                <li>:first-child  -  parenka pirmą vaiką</li>
+                <li>:last-child  -  parenka paskutinį</li>
+                <li>:only-child  - parenka vienintelį vaikinį elementą, jeigu jis yra vienas</li>
+                <hr>
+                <li>:first-of-type  - parenka pirmąjį nurodyto tipo elementą</li>
+                <li>:last-of-type  -  parenka paskutinį nurodyto tipo elementą</li>
+                <li>:only-of-type  - parenka vienintelį nurodyto tipo elementą </li>
+                <hr>
+                <li>:nth-child(n)  - parenka nurodytus  vaikinius elementus</li>
+                <li>:nth-last-child(n) - nuo galo parenka nurodytus vaikinius elementus</li>
+                <li>:nth-of-type(n) - renka ELEMENTUS pagal tipą (nebūtinai vaikinius)</li>
+                <li>:nth-last-of-type(n) - renka ELEMENTUS pagal tipą nuo galo</li>
+                <hr>
+                <li>::after -  sukuria turinį už elemento</li>
+                <li>::before - sukuria turinį prieš elementą</li>
+                <hr>
+                <li>input:checked - pažymėtus ar parinktus radio/checkbox/option pasirinkimus</li>
+                <li>input:default - iš anksto parinktas pasirinkimas</li>
+                <li>input:enabled - inputas, kuris neturi disabled atributo </li>
+                <li>input:disabled - inputas, kuris turi disabled atributą</li>
+                <li>input:focus - inputas, ant kurio yra paspausta/fokusuotas</li>
+                <li>input:in-range - inputas, kurio vertė yra nurodytose ribose </li>
+                <li>input:out-of-range - inputas, kurio vertė yra už nurodytų ribų </li>
+                <li>input:indeterminate - inputas, kurio reikšmė yra neapibrėžta</li>
+                <li>input:invalid -  inputas, kurio vertė yra netinkama</li>
+                <li>input:valid - inputas, kurio vertė yra tinkama</li>
+                <li>input:required - inputas su required atributu</li>
+                <li>input:optional - inputas be required atributo</li>
+                <li>input:read-only - inputas, su readonly atributu</li>
+                <li>input:read-write - inputas, be read only atributo</li>
+                <li>::placeholder - pasako, kad stilizuosime placeholder įvesties laukelį</li>
+                <hr>
+                <li>::first-letter - parenka elemento pirmąją raidė</li>
+                <li>::first-line - parenka elemento pirmąją eilutę</li>
+                <li>::selection - parenka vartotojo pažymėtą informaciją/turinį</li>
+            </ul>
+
+            <div class="selektoriuPvz">
+                <p class="rytoTekstas" id="hallo">Labas rytas</p>
+                <p>more</p>
+                <h1>tekstas more</h1>
+                <p>tekstas more and more</p>
+                <h1 class="heading irDar">tekstas more</h1>
+                <p>tekstas more and more</p>
+            </div>
+        </section>
+
+
+        <section id="multimedija">
+            <h1>Multimedija</h1>
+            <p>
+                Iframe skirtas įkelti kitos svetainės dalį/visą svetainę į savo svetainę
+            </p>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="audio">
+                <audio controls>
+                    <source src="" type="audio/mp3">
+                    <source src="" type="audio/mp3">
+                    <source src="" type="audio/mp3">
+                </audio>
+                <audio src="" controls> </audio>
+            </div>
+            <div class="maps">
+                <!-- <div class="">Prijungi JS</div> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2247.411800346967!2d21.126864389443902!3d55.716595343202556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1668415632703!5m2!1slt!2slt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="page">
+                <iframe src="https://lrt.lt" heigth="400" width="500" frameborder="0"></iframe>
+
+            </div>
+
+
+
+        </section>
+
+        <section id="pvz">
+            <table>
+                <tbody>
+                
+                        <tr>
+                          <th>Vardas</th>
+                          <th>Pavardė</th>
+                          <th>El. paštas</th>
+                          <th>El. paštas</th>
+                          <th>El. paštas</th>
+                        </tr>
+                        <tr>
+                         <td>Saulius</td>
+                         <td>Skvernelis</td>
+                         <td>skvernelis@mail.com</td>
+                         <td>skvernelis@mail.com</td>
+                         <td>skvernelis@mail.com</td>
+                        </tr>
+                        <tr>
+                          <td>Liudas</td>
+                          <td>Vasaris</td>
+                          <td>vasaroju@mail.com</td>
+                          <td>vasaroju@mail.com</td>
+                          <td>vasaroju@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jonas</td>
+                            <td>Mekas</td>
+                            <td>jonas@mail.com</td>
+                            <td>jonas@mail.com</td>
+                            <td>jonas@mail.com</td>
+                            
+                        </tr>
+                    
+                </tbody>
+            </table>
+
+
+        </section>
+    </main>
+
+</body>
+</html>

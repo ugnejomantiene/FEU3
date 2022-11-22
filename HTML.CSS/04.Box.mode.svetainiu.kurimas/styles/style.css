@@ -1,0 +1,131 @@
+html {
+scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+.boxModelPvz {
+    /* Turinys */
+    display: block;
+    background-color: blueviolet;
+    font-size: 40px;
+    color: black;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    /*Padding */
+    padding: 20px 50px 5px 0px;
+    padding-top: 100px;
+    padding-right: 1px;
+    /* Border */
+    border: 10px dotted black;
+    border-top-left-radius: 20%;
+    /*Margin */
+    margin: 100px auto ; /* Padalina kaire ir desine lygiai per puse*/
+    /* Positions */
+    
+   
+}
+#background > div {
+    height: 50vh;
+    
+}
+.fonas1 {
+    background-color: aqua;
+}
+.fonas2 {
+    background-image: url('../image/leave.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  /* geriausias sprendimas*/
+}
+.fonas3 {
+    position: relative;
+}
+.fonas3 img{
+    z-index: -1;
+    opacity: 0.7; /*paveiksliuko ryskumas */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.fonas4 {
+    background-image: url('../image/istockphoto-1018901078-612x612.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+}
+.fonas5 {
+    background-image: linear-gradient( /*svarbu!!!!*/
+        to bottom right,
+        rgb(76, 76, 154),
+        orange,
+        rgb(162, 115, 115)
+    );
+}
+.fonas6 {
+    background-image: radial-gradient(
+        circle at center,
+        yellow,
+        white,
+        purple
+    );
+}
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+  
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
+  }
+  
+  /* Style div elements that have class equal to name */
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+  
+    margin-top: 16px;
+  }
+  
+  .logo, .mainMenu {
+    display: inline-block;
+  }
+
+  header {
+    background-color: greenyellow;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .logo img{
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+  }
+  .mainMenu {
+    float: right;
+  }
+  .mainMenu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .mainMenu > ul > li {
+    display: inline-block;
+    margin-right: 10px;
+
+  }
+  .link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 100px;
+
+  }

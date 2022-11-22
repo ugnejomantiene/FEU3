@@ -1,0 +1,142 @@
+
+
+
+/* Pagrindiniai */
+body {
+    background-color: rgb(226, 227, 227);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Meniu  */
+header nav {
+    display: block;
+    width: 95%;
+    justify-content: center;
+
+}
+header> nav> ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header > nav > ul >li {
+    background-color: rgb(153, 176, 207);
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 50px 0px 50px 0px; 
+    border: 2px solid white;
+}
+header > .hero {
+    background-image: url(./images/hero.jpg);
+    height: 200px;
+    background-size: cover;
+}
+header > .hero > h1 {
+    color: white;
+    margin: 0;
+    padding: 5px;
+    text-align: end;
+}
+
+
+/* Photo */
+main > section > .photo > img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    /* padding: 10px; */
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+
+
+/* Main  */
+
+main > section {
+    display: flex;
+    padding: 20px;
+}
+section > div > h1 {
+    margin: 0;
+}
+
+/* Footer   */
+
+footer {
+    display: flex;
+    text-align: center;
+    background-color:rgb(95, 95, 148);
+    border-radius: 20px 0px;
+    border: 2px solid white;
+    justify-content: center;
+    flex-direction: column;
+}
+footer > p {
+    margin: 0;
+    padding: 5px;
+}
+
+@media (min-width:800px) {
+    header nav > ul {
+        display: flex;
+        width: 95%;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 50%;
+    }
+    header > .hero {
+        height: 400px;
+    }
+    main { 
+        display: flex;
+        flex-direction: row;
+    }
+    main > section {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    main > section > .photo {
+        order: -1;
+    }
+}
+@media (min-width:1000px) {
+    main {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr ;
+    }
+    main > section {
+        display: flex;
+        flex-direction: row;
+    }
+    main > section > .photo {
+        order: +1;
+        width: 400px;
+    }
+    main > section > .photo >img {
+        padding: 10px;
+    }
+    main > section {
+        height: 200px;
+    }
+
+
+}
+
+
+
+
+
+

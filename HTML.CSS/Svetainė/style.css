@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    margin:0;
+    height: 800vh;
+}
+
+.logo, .mainMenu {
+    display: inline-block;
+    height: 100px;
+}
+header {
+    background-color: rgb(174, 143, 202);
+    height: 100px;
+    
+}
+.logo img {
+    height: 80px;
+    width: auto;
+    margin: 10px;
+    border-radius: 50%;
+    border: 3px solid rgb(92, 40, 92);
+
+}
+.mainMenu {
+    float: right;
+}
+.mainMenu  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.mainMenu > ul > li {
+    display: inline-block;
+}
+.link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 100px;
+    padding: 40px;
+}
+a .link {
+    padding: auto;
+}
+
+#hero {
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    padding: 0;
+}
+#hero > .heroContent {
+    padding: 40vh auto;
+}
+#hero > .heroContent > h1 {
+    margin: 0;
+    padding: 100px;
+    text-align: center;
+    font-size: 80px;
+}
+
+#about .aboutContent {
+    padding: 0 150px;
+    text-align: center;
+    
+}
+#about > .aboutContent > h1 {
+    font-size: 50px;
+    height: 40px;
+}
+#about > .aboutContent > p{
+    line-height: 30px;
+    font-size: 20px;
+
+}
+#article {
+    margin: 0;
+    text-align: justify;
+    padding: 0 50px;
+
+}
+h2 {
+    text-align: center;
+
+}
+
+#comment {
+    padding-top: 20px;
+    margin: 50px;
+}
+#comment > .comment {
+    text-align: center;
+}
+textarea {
+    border: 2px solid purple;
+    
+}
+#contact {
+    margin: 50px;
+    box-sizing: border-box;
+}
+   
+ .con {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+ }
+
+img {
+    height: 200px;
+    width: 300px;
+    float: right;
+}
+
+#contact > .contact > p > a {
+    display: block;
+}
+
+
+.contact , .map {
+    display: inline-block;
+}
+.sTable {
+    margin: 50px auto;
+    width: 800px;
+}
+#stats {
+    margin-top: 50px;
+    line-height: 20px;
+    font-size: 30px;
+}
+tr {
+    text-align: left;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: rgb(32, 17, 47);
+    height: 300px;
+    position: relative;
+}
+.footerC {
+    display: inline-block;
+}
